@@ -53,7 +53,7 @@ bintray {
         vcsUrl = 'https://github.com/gamechanger/gradle-git-repo-plugin'
         publish = true
         version {
-            name = '2.1.0'
+            name = version
             desc = 'Use a git repo as a maven-style repo'
             released = new Date()
         }
