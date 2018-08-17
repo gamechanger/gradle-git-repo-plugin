@@ -102,7 +102,7 @@ class GitRepoPlugin  implements Plugin<Project> {
         }
         if(!project.hasProperty("offline")) {
             gitRepo.checkout(branch: branch)
-            gitRepo.pull()
+            // gitRepo.pull()
         }
 
         return repoDir;
