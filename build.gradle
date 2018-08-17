@@ -17,13 +17,14 @@ group = 'com.layer'
 apply from: "$rootDir/version.gradle"
 
 repositories {
+    jcenter()
     mavenCentral()
 }
 
 dependencies {
     compile gradleApi()
     compile localGroovy()
-    compile 'org.ajoberstar:gradle-git:1.0.0'
+    compile 'org.ajoberstar:gradle-git:1.7.2'
 }
 
 task javadocJar(type: Jar) {
@@ -52,7 +53,7 @@ bintray {
         vcsUrl = 'https://github.com/gamechanger/gradle-git-repo-plugin'
         publish = true
         version {
-            name = '2.0.2'
+            name = '2.1.0'
             desc = 'Use a git repo as a maven-style repo'
             released = new Date()
         }
